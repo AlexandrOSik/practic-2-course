@@ -1,0 +1,175 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header, footer {
+    margin: 0px;
+    min-height: 50px;
+    background: #226;
+    padding: 5px 15px;
+    color: #fff;
+}
+
+ul {
+    max-width: 400px;
+    margin: 0px auto;
+}
+p {
+    max-width: 400px;
+    margin: 0px auto;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 20px;
+    color: #fff;
+    line-height: 40px;
+    margin: 0px;
+    text-align: center;
+}
+
+div {
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid #226;
+    background: #eef;    
+    padding: 5px 15px;
+    margin: 15px auto;
+    max-width: 400px;
+    border-radius: 5px 10px;
+}
+
+.action-text {
+    text-align: center;
+}
+
+@keyframes appearing {
+    0% {
+        opacity: 0;        
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.msg:nth-of-type(1) {
+    animation: appearing 1s;
+}
+
+.msg:nth-of-type(2) {
+    animation: appearing 1.5s;    
+}
+
+.msg:nth-of-type(3) {
+    animation: appearing 2s;        
+}
+
+.msg:nth-of-type(4) {
+    animation: appearing 2.5s;        
+}
+
+section {
+    max-width: 400px;
+    margin: auto;
+}
+
+section:nth-of-type(2) {
+    border-top: 1px solid #226;
+    margin-bottom: 60px;
+    animation: appearing 3.5s;
+}
+
+button, a {
+    background: #226;
+    border-radius: 15px;
+    line-height: 20px;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: 0.5s;
+    border: 1px solid #226;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+button {
+    border: 1px solid #262;
+    background: #262;
+}
+
+button:hover, a:hover {
+    background: #44a;
+    transform: scale(1.1);
+}
+
+button:hover {
+    background: #4a4;
+}
+
+
+.own {
+    color: #fff;
+    font-weight: bold;
+}
+
+.do-not-own {
+    color: #888;
+    font-weight: normal;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.hidden {
+    animation: hide 1s forwards !important;
+}
+
+@keyframes show {
+    0% {
+        top: -50px;
+        opacity: 0;
+    }
+    60% {
+        top: 0px;
+    }
+    80% {
+        opacity: 1;
+        top: -10px;
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
+        display: none;
+    }
+}
+
+.appears {
+    position: relative;
+    animation: show 1s normal;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #af0;
+    background: #af01;
+    color: #090;
+}

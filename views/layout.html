@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>{{ .Title }}</title>
+  <meta charset="utf-8">
+  <link href="/static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+
+  {{.LayoutContent}}
+
+  <section id="outMessage"></section>
+
+  <footer>
+    <p>Предметы:</p>
+    <ul>
+      {{ range $k, $v := .Items }}
+        {{ if $v }}
+          <li class="own">{{ $k }} (есть)</li>
+        {{ else }}
+          <li class="do-not-own">{{ $k }} (не найдено)</li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </footer>
+
+</body>
+</html>
