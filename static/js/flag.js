@@ -14,7 +14,7 @@
             });
         };
     } else {
-        setTimeout(() => { document.location = "/"; }, 12000);
+        setTimeout(() => { document.location = "/"; }, 20000);
     }
 
 })();
