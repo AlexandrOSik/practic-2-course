@@ -7,3 +7,5 @@ RUN git clone https://github.com/AlexandrOSik/practic-2-course.git .
 EXPOSE 8000
 RUN php regenerate.php > utils/constants.go && go build && rm $(find . | grep '.go') 
 CMD ["./website"]
+
+
